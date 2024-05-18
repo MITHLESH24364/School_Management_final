@@ -58,6 +58,7 @@
 <input class="form-control pass-input" type="password" id="password" name="password">
 <span class="profile-views feather-eye toggle-password"></span>
 </div>
+    
 <div class=" dont-have">Already Registered? <a href="login.jsp">Login</a></div>
 <div class="form-group mb-0">
 <button class="btn btn-primary btn-block" type="submit">Register</button>
