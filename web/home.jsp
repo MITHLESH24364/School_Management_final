@@ -11,8 +11,8 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
-    <title>Admin Dashboard</title>
-    <link rel="shortcut icon" href="assets/img/favicon.png">
+    <title>MKS School - Admin Dashboard</title>
+    <link rel="shortcut icon" href="assets/img/top-logo.png">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,400;1,500;1,700&display=swap"rel="stylesheet">
     <link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/plugins/feather/feather.css">
@@ -169,7 +169,7 @@
                             <img class="rounded-circle" src="assets/img/profiles/avatar-01.jpg" width="31"
                                 alt="Soeng Souy">
                             <div class="user-text">
-                                <h6>Soeng Souy</h6>
+                                <h6>Mithlesh Kumar Singh</h6>
                                 <p class="text-muted mb-0">Administrator</p>
                             </div>
                         </span>
@@ -185,9 +185,9 @@
                                 <p class="text-muted mb-0">Administrator</p>
                             </div>
                         </div>
-                        <a class="dropdown-item" href="profile.html">My Profile</a>
-                        <a class="dropdown-item" href="inbox.html">Inbox</a>
-                        <a class="dropdown-item" href="login.html">Logout</a>
+                        <a class="dropdown-item" href="">My Profile</a>
+                        <a class="dropdown-item" href="">Inbox</a>
+                        <a class="dropdown-item" href="index.jsp">Logout</a>
                     </div>
                 </li>
 
