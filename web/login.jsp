@@ -39,7 +39,7 @@
 <div class="login-right">
 <div class="login-right-wrap">
 <h1>Welcome to MKS School</h1>
-<p class="account-subtitle">Need an account? <a href="register.html">Sign Up</a></p>
+<p class="account-subtitle">Need an account? <a href="register.jsp">Sign Up</a></p>
 <h2>Sign in</h2>
 
 <form action="index.html">
