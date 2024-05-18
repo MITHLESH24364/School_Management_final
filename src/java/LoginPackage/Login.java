@@ -8,8 +8,14 @@ import jakarta.servlet.ServletException;
 import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
+import jakarta.servlet.http.HttpSession;
 import java.io.IOException;
 import java.io.PrintWriter;
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import password.password;
 
 /**
  *
@@ -70,6 +76,50 @@ public class Login extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         processRequest(request, response);
+         HttpSession s=request.getSession();
+        password p = new password();
+        String username = request.getParameter("username");
+        String password = request.getParameter("password");
+//            String password=p.hash(request.getParameter("password"));
+         LoginModel model = new LoginModel(username, password );
+        System.out.println(username + "  " + password);
+        
+        System.out.println("Model value: " +model.getUname() + " "  + model.getPassword());
+        s.setAttribute("username", username);
+        System.out.println(s.getAttribute("Id"));
+         try {
+            Class.forName("com.mysql.jdbc.Driver");
+            try (Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/school_management_final", "root", "")) {
+                String sql = "Select * from admin_login where username = ? and password = ?";
+                PreparedStatement ps = con.prepareStatement(sql);
+                ps.setString(1, model.getUname());
+                ps.setString(2, model.getPassword());
+                
+                ResultSet rs = ps.executeQuery();   
+                
+                while (rs.next()) {
+                    
+                    System.out.println("Password is correct");
+                    response.sendRedirect("home.jsp?id="+ rs.getInt(1));
+                             int id = rs.getInt(1);
+                             s.setAttribute("Id", id);
+
+//    if (rs.getString(1).equals(model.getUname())) {
+//        System.out.println("it is true");
+//        response.sendRedirect("clintpage.jsp");
+//        
+//    }
+
+}
+                ps.close();
+                rs.close();
+                System.out.println("password is incorrent");
+response.sendRedirect("login.jsp");
+                
+            }
+        } catch (Exception e) {
+            System.out.println(e);
+        }
     }
 
     /**
