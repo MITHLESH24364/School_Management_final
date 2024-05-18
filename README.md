@@ -1,1 +1,1 @@
-update
+<h1>SCHOOL MANAGEMENT SYSTEM</h1>
