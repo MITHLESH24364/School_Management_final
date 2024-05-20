@@ -143,7 +143,7 @@
 <a href="student-details.html"><%=rs.getString(2)%></a>
 </h2>
 </td>
-<td><%=rs.getString(10)%><%=rs.getString(11)%></td>
+<td><%=rs.getString(10)%> <%=rs.getString(11)%></td>
 <td><%=rs.getString(4)%></td>
 <td><%=rs.getString(13)%></td>
 <td><%=rs.getString(12)%></td>
