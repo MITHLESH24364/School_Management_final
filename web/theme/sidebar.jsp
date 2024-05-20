@@ -19,9 +19,9 @@
                     <a href="#"><i class="fas fa-graduation-cap"></i> <span> Students</span> <span
                             class="menu-arrow"></span></a>
                     <ul>
-                        <li><a href="students.html">Student List</a></li>
+                        <li><a href="students.jsp">Student List</a></li>
                         <li><a href="student-details.html">Student View</a></li>
-                        <li><a href="add-student.html">Student Add</a></li>
+                        <li><a href="add-student.jsp">Student Add</a></li>
                         <li><a href="edit-student.html">Student Edit</a></li>
                     </ul>
                 </li>
@@ -49,7 +49,7 @@
                             class="menu-arrow"></span></a>
                     <ul>
                         <li><a href="subjects.html">Subject List</a></li>
-                        <li><a href="add-subject.html">Subject Add</a></li>
+                        <li><a href="add-subject.jsp">Subject Add</a></li>
                         <li><a href="edit-subject.html">Subject Edit</a></li>
                     </ul>
                 </li>

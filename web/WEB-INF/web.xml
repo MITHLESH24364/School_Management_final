@@ -8,6 +8,10 @@
         <servlet-name>Register</servlet-name>
         <servlet-class>LoginPackage.Register</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>Add_Student</servlet-name>
+        <servlet-class>Students.Add_Student</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>Login</servlet-name>
         <url-pattern>/Login</url-pattern>
@@ -15,6 +19,10 @@
     <servlet-mapping>
         <servlet-name>Register</servlet-name>
         <url-pattern>/Register</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>Add_Student</servlet-name>
+        <url-pattern>/Add_Student</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>
